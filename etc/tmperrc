@@ -1,0 +1,22 @@
+#!/bin/bash
+#
+# usage:
+# ### install and source bashrc to get new functions
+# npm install -g tmper
+# tmper-install
+# . ~/.bashrc
+#
+# ### Use similiar to pushd / popd to move to a temporary directory
+# pusht
+# ...do temporary stuff...
+# popt
+#
+# cdt [directory]
+
+pusht() { pushd "$(tmper)"}
+popt() { local TMP_ROOT="$PWD"; popd; tmper -d "$TMP_ROOT"; }
+cdt() { cd "$(tmper)"; }
+
+export -f pusht
+export -f popt
+export -f cdt
