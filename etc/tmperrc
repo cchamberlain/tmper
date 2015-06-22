@@ -13,9 +13,19 @@
 #
 # cdt [directory]
 
-pusht() { pushd "$(tmper)"}
-popt() { local TMP_ROOT="$PWD"; popd; tmper -d "$TMP_ROOT"; }
-cdt() { cd "$(tmper)"; }
+pusht() {
+  pushd "$(tmper)"
+}
+
+popt() {
+  local TMP_ROOT="$PWD"
+  popd
+  tmper -d "$TMP_ROOT"
+}
+
+cdt() {
+  cd "$(tmper)"
+}
 
 export -f pusht
 export -f popt

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+RC_PATH="${1-"$HOME/.tmperrc"}"
+[ -f "$RC_PATH" ] && rm "$RC_PATH"
