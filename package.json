@@ -1,11 +1,11 @@
 {
   "name": "tmper",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Tool for creating and working in temporary spaces.",
   "main": "index.js",
   "preferGlobal": true,
   "directories": {
-  	"bin": "bin"
+    "bin": "bin"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,6 @@
   "bugs": {
     "url": "https://github.com/cchamberlain/tmper/issues"
   },
-  "homepage": "https://github.com/cchamberlain/tmper#readme"
+  "homepage": "https://github.com/cchamberlain/tmper#readme",
+  "scripts": {}
 }
